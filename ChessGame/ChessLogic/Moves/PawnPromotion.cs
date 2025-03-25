@@ -20,7 +20,7 @@ namespace ChessLogic.Moves
             this.newType = newType;
         }
 
-        private Piece CreatePromotionPiece(Player color)
+        public Piece CreatePromotionPiece(Player color)
         {
             return newType switch
             {
