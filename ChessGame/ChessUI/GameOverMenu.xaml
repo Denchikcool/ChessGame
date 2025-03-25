@@ -21,8 +21,8 @@
 
             <TextBlock Grid.ColumnSpan="2" x:Name="WinnerText" Text="WINNER TEXT" Style="{StaticResource TextStyle}" FontSize="28"/>
             <TextBlock Grid.Row="1" Grid.ColumnSpan="2" x:Name="ReasonText" Text="REASON TEXT" Style="{StaticResource TextStyle}" FontSize="16"/>
-            <Button Grid.Row="2" Content="RESTART" Style="{StaticResource ButtonStyle}" Width="80" Height="30" Click="Restart_Click"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="EXIT" Style="{StaticResource ButtonStyle}" Width="80" Height="30" Click="Exit_Click"/>
+            <Button Grid.Row="2" Content="СЫГРАТЬ ЕЩЁ РАЗ" Style="{StaticResource ButtonStyle}" Width="80" Height="30" Click="Restart_Click"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="ВЫХОД" Style="{StaticResource ButtonStyle}" Width="80" Height="30" Click="Exit_Click"/>
         </Grid>
     </Border>
 </UserControl>
