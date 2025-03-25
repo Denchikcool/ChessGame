@@ -13,7 +13,7 @@
                 <RowDefinition Height="1.5*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="SELECT A PIECE" Style="{StaticResource TextStyle}" FontSize="28"/>
+            <TextBlock Text="ВЫБЕРИТЕ ФИГУРУ" Style="{StaticResource TextStyle}" FontSize="28"/>
 
             <UniformGrid Grid.Row="1" Rows="1" Columns="4" Cursor="Hand">
                 <Image x:Name="QueenImage" MouseDown="QueenImg_MouseDown" Source="Assets/QueenW.png"/>
