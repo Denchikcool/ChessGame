@@ -35,9 +35,9 @@ namespace ChessUI
         {
             return winner switch
             {
-                Player.White => "WHITE WINS!",
-                Player.Black => "BLACK WINS!",
-                _ => "IT'S A DRAW"
+                Player.White => "БЕЛЫЕ ВЫИГРАЛИ!",
+                Player.Black => "ЧЕРНЫЕ ВЫИГРАЛИ!",
+                _ => "НИЧЬЯ"
             };
         }
 
@@ -45,8 +45,8 @@ namespace ChessUI
         {
             return player switch
             {
-                Player.White => "WHITE",
-                Player.Black => "BLACK",
+                Player.White => "БЕЛЫЕ",
+                Player.Black => "ЧЕРНЫЕ",
                 _ => ""
             };
         }
@@ -55,11 +55,11 @@ namespace ChessUI
         {
             return reason switch
             {
-                EndReason.Stalemate => $"STALEMATE - {PlayerString(currentPlayer)} CAN'T MOVE",
-                EndReason.Checkmate => $"CHECKMATE - {PlayerString(currentPlayer)} CAN'T MOVE",
-                EndReason.FiftyMoveRule => "FIFTY-MOVE RULE",
-                EndReason.InsufficientMaterial => "INSUFFICIENT MATERIAL",
-                EndReason.ThreefoldRepetition => "THREEFOLD REPETITION",
+                EndReason.Stalemate => $"ПАТ - {PlayerString(currentPlayer)} НЕ МОГУТ ХОДИТЬ",
+                EndReason.Checkmate => $"МАТ - {PlayerString(currentPlayer)} НЕ МОГУТ ХОДИТЬ",
+                EndReason.FiftyMoveRule => "ПРАВИЛО 50-ти ХОДОВ",
+                EndReason.InsufficientMaterial => "НЕДОСТАТОЧНО ФИГУР ДЛЯ ЗАВЕРШЕНИЯ ПАРТИИ",
+                EndReason.ThreefoldRepetition => "ТРОЙНОЕ ПОВТОРЕНИЕ ХОДА",
                 _ => ""
             };
         }
